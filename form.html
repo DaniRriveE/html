@@ -3,19 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Form</title>
+    <title>Survey</title>
 </head>
 <body>
-    
     <nav>
-        <a href="index.html">Home</a>
+        Go back to <a href="index.html">home</a>
     </nav>
-
-    <form>    
+    <h1>Movie Survey</h1>
+    <form action="https://formspree.io/f/xpzoqbbd" method="post">    
         <label>
-            Client Name: <input type="text" name="client-name">
+            Your Name: <input type="text" name="name" placeholder="Name" required>
         </label>
-        <input type="submit">
+        <br>
+        <br>
+        <label>
+            Your email: <input type="email" name="email" placeholder="ex. johndoe@gmail.com" required>
+        <p><b>Which one do You prefer: </b></p>
+        <label>
+            <input type="radio" name="comics" value="marvel">Marvel
+        </label>
+        <label>
+            <input type="radio" name="comics" value="dc">DC comics
+        </label>
+        <p><b>Have You seen any of these movies?</b></p>
+        <label>
+            <input type="checkbox" name="movie-seen" value="guardians">Guardians of the Galaxy
+        </label>
+        <label>
+            <input type="checkbox" name="movie-seen" value="thor">Thor: Ragnarok
+        </label>
+        <label>
+            <input type="checkbox" name="movie-seen" value="panther">Black panther
+        </label>
+        <p><b>If You've already seen one of these movies, which one did You like the most: </b></p>
+        <label>
+            <input type="radio" name="movie-seen" value="guardians">Guardians of the Galaxy
+        </label>
+        <label>
+            <input type="radio" name="movie-seen" value="thor">Thor: Ragnarok
+        </label>
+        <label>
+            <input type="radio" name="movie-seen" value="panther">Black panther
+        </label>
+        <label>
+            <input type="radio" name="movie-seen" value="any">I didn't like any
+        </label>
+        <br><br>
+        <input type="submit" name="submit" value="Done!">
     </form>
 
 </body>
